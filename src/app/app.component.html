@@ -1,13 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <ul>
-    <li> <a  [routerLink]="['/home']">Home</a>  </li>
-    <li> User List2</li>
-    <li> User List3</li>
-    <li> User List4 </li>
-  </ul>
+<h1> User List Using --- </h1>
+<div id="menu-outer">
+  <div class="table">
+    <ul id="horizontal-list">
+      <li> <a  [routerLink]="['/callbackUser']">Using Callback</a>  </li>
+      <li> <a  [routerLink]="['/promiseUser']">Using Promise</a>  </li>
+      <li> <a  [routerLink]="['/observerUsers']">Using Observer</a>  </li>
+    </ul>
+  </div>
 </div>
 <hr>
+
 <div>  
   <router-outlet></router-outlet>  
 </div>
+
+

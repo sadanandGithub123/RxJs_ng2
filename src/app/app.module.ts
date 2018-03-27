@@ -1,32 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common'
 import { Routes, RouterModule } from '@angular/router';  
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component'
 import { DataService } from '../services/dataService'
 import { HttpModule } from '@angular/http';
 import {Http} from '@angular/http';
 
-
+import { ObserverComponent } from './obserser/observer.component'
+import { CbUserComponent } from "./Callback/cbUser.component";
+import { PromiseComponent } from './promise/promise.component'
 const routes: Routes = [  
   {  
     path: '',  
-    component: AppComponent
+    component: ObserverComponent
   },
   {  
-    path: 'home',  
-    component: HomeComponent
+    path: 'observerUsers',  
+    redirectTo : ''
+  },
+  {
+    path:'callbackUser',
+    component : CbUserComponent
+  },
+  {
+    path:'promiseUser',
+    component : PromiseComponent
   }
-
+  
+  
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    ObserverComponent,
+    CbUserComponent,
+    PromiseComponent
   ],
   imports: [   
     BrowserModule,
+    CommonModule,
     HttpModule,
     RouterModule.forRoot(routes)
   ],
