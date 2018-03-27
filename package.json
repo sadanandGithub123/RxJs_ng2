@@ -2,6 +2,10 @@
   "name": "rx-js",
   "version": "0.0.0",
   "license": "MIT",
+  "author":{
+    "name" : "Sadanand Mandal",
+    "email" : "mandal.sadanand02@gmail.com"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
