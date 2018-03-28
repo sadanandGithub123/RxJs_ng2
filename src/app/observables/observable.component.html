@@ -6,7 +6,7 @@
 
 <div style="margin-top:80px;">
   <span class="demoBox">
-    <button  (click)="clicked()"> Button 1 </button>
+    <button  (click)="clicked1()"> Button 1 </button>
     <span>
       Value Of Button 1 -- {{clickedValue_Of}}
     </span>
@@ -15,7 +15,14 @@
   <span class="demoBox">
     <button #button2 > Button 2 </button>
     <span>
-      Value Of Button 2 -- {{clickedValue_Of}}
+      Value Of Button 2 -- {{value_fromEvt}}
+    </span>
+  </span>
+
+  <span class="demoBox">
+    <button (click)="clicked3()"> Button 3 </button>
+    <span>
+      Value Of Button 3 -- {{value_create}}
     </span>
   </span>
 </div>

@@ -11,6 +11,8 @@ import { ObserverComponent } from './obserser/observer.component'
 import { CbUserComponent } from "./Callback/cbUser.component";
 import { PromiseComponent } from './promise/promise.component'
 import { ObservableComponent} from './observables/Observable.component'
+import { OperatorsComponent } from './operators/operators.component'
+
 const routes: Routes = [  
   {  
     path: '',  
@@ -29,6 +31,14 @@ const routes: Routes = [
     component : PromiseComponent
   },
   {
+    path:'observerUsers',
+    component : ObserverComponent
+  },
+  {
+    path:'operators',
+    component : OperatorsComponent
+  },
+  {
     path:'createObservable',
     component : ObservableComponent
   }
@@ -40,7 +50,8 @@ const routes: Routes = [
     ObserverComponent,
     CbUserComponent,
     PromiseComponent,
-    ObservableComponent
+    ObservableComponent,
+    OperatorsComponent
   ],
   imports: [   
     BrowserModule,
