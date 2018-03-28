@@ -4,3 +4,11 @@
     background-color: #736d6d;
     padding: 10px;
 }
+.demoBox{
+    border: 2px #736d6d solid;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    margin-right: 10px;
+}

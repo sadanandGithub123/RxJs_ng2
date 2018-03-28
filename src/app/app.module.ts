@@ -10,13 +10,14 @@ import {Http} from '@angular/http';
 import { ObserverComponent } from './obserser/observer.component'
 import { CbUserComponent } from "./Callback/cbUser.component";
 import { PromiseComponent } from './promise/promise.component'
+import { ObservableComponent} from './observables/Observable.component'
 const routes: Routes = [  
   {  
     path: '',  
-    component: ObserverComponent
+    component: ObservableComponent
   },
   {  
-    path: 'observerUsers',  
+    path: 'createObservable',  
     redirectTo : ''
   },
   {
@@ -26,9 +27,11 @@ const routes: Routes = [
   {
     path:'promiseUser',
     component : PromiseComponent
+  },
+  {
+    path:'createObservable',
+    component : ObservableComponent
   }
-  
-  
 ];
 
 @NgModule({
@@ -36,7 +39,8 @@ const routes: Routes = [
     AppComponent,
     ObserverComponent,
     CbUserComponent,
-    PromiseComponent
+    PromiseComponent,
+    ObservableComponent
   ],
   imports: [   
     BrowserModule,
